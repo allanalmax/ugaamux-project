@@ -1,0 +1,31 @@
+body {
+  font-family: Courier;
+  color: firebrick;
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.selector {
+    margin: 100px;
+}
+
+/* ul {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 20px 0px 20px;
+  max-width: 500px;
+  margin-left: 130px;
+  list-style-type: none;
+} */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border: 1px solid black;
+  padding: 20px;
+  margin-left: 150px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
