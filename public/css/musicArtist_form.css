@@ -4,14 +4,17 @@ body {
     padding: 20px;
 }
 
-h2 {
-    /* color: firebrick; */
+.container {
+    margin-left: 100px;
+}
+
+.col-3 {
+    margin-right: 50px;
 }
 
 form label{
     padding: 10px;
     font-weight: bold;
-    color: firebrick;
 }
 
 .input-field {
@@ -22,14 +25,6 @@ form label{
     padding: 5px;
     border-radius: 5px;
     border: 1px solid gray;
-}
-
-
-.section {
-    float: left;
-    text-align: center;
-    margin-left: 90px;
-    padding: 10px;
 }
 
 button {

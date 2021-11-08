@@ -4,14 +4,17 @@ body {
     padding: 20px;
 }
 
-h2 {
-    color: firebrick;
+.container {
+    margin-left: 100px;
+}
+
+.col-3 {
+    margin-right: 50px;
 }
 
 form label{
     padding: 10px;
     font-weight: bold;
-    color: firebrick;
 }
 
 .input-field {
