@@ -1,0 +1,78 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='/css/bootstrap/css/bootstrap.css')
+  link(rel='stylesheet' href='/css/musicArtist_form.css')
+h2 Music Artist Form.
+form#app(method='post' action='/musicArtist_form')
+  .container
+    .row
+      .col-3
+        .input-field
+          label(for='Full Name') Full Name
+          input(type='text' name='fullname')
+          ul(v-if='fullNameError' style='color: red;') Full Name required.
+        .input-field
+          label(for='Stage Name') Stage Name
+          input(type='text' name='stagename')
+          ul(v-if='stageNameError' style='color: red;') Stage Name required.
+        .input-field
+          label(for='Date Of Birth') Date Of Birth
+          input(type='date' name='birthdate')
+          ul(v-if='dateOfBirthError' style='color: red;') Date of birth required.
+        .input-field
+          label(for='Location') Base Location
+          input(type='text' name='baselocation')
+          ul(v-if='baseLocationError' style='color: red;') Base Location required.
+      .col-3
+        .input-field
+          label(for='Profile') Profile
+          input(type='text' name='profile')
+          ul(v-if='profileError' style='color: red;') Profile required.
+        .input-field
+          label(for='NIN') NIN
+          input(type='text' name='NIN')
+          ul(v-if='NINError' style='color: red;') NIN required.
+        .input-field
+          label(for='Current Location') Current Location
+          input(type='text' name='currentlocation')
+          ul(v-if='currentLocationError' style='color: red;') Current Location required.
+        .input-field
+          label(for='Gender') Gender
+          br
+          input(type='radio' name='sex' value='Male')
+          span Male
+          input(type='radio' name='sex' value='Female')
+          span Female
+          ul(v-if='genderError' style='color: red;') Gender required.
+      .col-3
+        .input-field
+          label(for='Number of albums') Number of albums
+          input(type='text' name='albumnumber')
+          ul(v-if='numberOfAlbumsError' style='color: red;') Number of albums required.
+        .input-field
+          label(for='Artist ID') Artist ID
+          input(type='text' name='artistID')
+          ul(v-if='artistIDError' style='color: red;') ArtistID required.
+        .input-field
+          label(for='When did you start singing') When did you start singing
+          input(type='date' name='startdate')
+          ul(v-if='dateOfStartError' style='color: red;') Date of start required.
+        .input-field
+          label(for='Contact') Contact
+          input(type='tel' name='contact')
+          ul(v-if='contactError' style='color: red;') Contact required.
+  div
+    button#sub-btn(type='submit' v-on:click='registerArtist')
+      | Submit
+    button#res-btn(type='reset') Reset
+div
+  p
+    | Already have an account? 
+    a(href='') log in
+script(src='/js/vue.js')
+script(src='/css/bootstrap/js/bootstrap.bundle.js')
+script(src='/js/artistValidate.js')

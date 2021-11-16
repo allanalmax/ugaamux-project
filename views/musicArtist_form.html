@@ -10,28 +10,28 @@
   </head>
   <body>
     <h2>Music Artist Form.</h2>
-    <form id="app">
+    <form id="app" method="post" action="/musicArtist_form">
       <div class="container">
         <div class="row">
           <div class="col-3">
             <div class="input-field">
               <label for="Full Name">Full Name</label>
-              <input type="text" />
+              <input type="text" name="fullname"/>
               <ul v-if="fullNameError" style="color: red;">Full Name required.</ul>
             </div>
             <div class="input-field">
               <label for="Stage Name">Stage Name</label>
-              <input type="text" />
+              <input type="text" name="stagename"/>
               <ul v-if="stageNameError" style="color: red;">Stage Name required.</ul>
             </div>
             <div class="input-field">
               <label for="Date Of Birth">Date Of Birth</label>
-              <input type="date" />
+              <input type="date" name="birthdate"/>
               <ul v-if="dateOfBirthError" style="color: red;">Date of birth required.</ul>
             </div>
             <div class="input-field">
-              <label for="Location">Location</label>
-              <input type="text" />
+              <label for="Location">Base Location</label>
+              <input type="text" name="baselocation"/>
               <ul v-if="baseLocationError" style="color: red;">Base Location required.</ul>
             </div>
           </div>
@@ -39,17 +39,17 @@
           <div class="col-3">
             <div class="input-field">
               <label for="Profile">Profile</label>
-              <input type="text" />
+              <input type="text" name="profile"/>
               <ul v-if="profileError" style="color: red;">Profile required.</ul>
             </div>
             <div class="input-field">
               <label for="NIN">NIN</label>
-              <input type="text" />
+              <input type="text" name="NIN"/>
               <ul v-if="NINError" style="color: red;">NIN required.</ul>
             </div>
             <div class="input-field">
               <label for="Current Location">Current Location</label>
-              <input type="text" />
+              <input type="text" name="currentlocation"/>
               <ul v-if="currentLocationError" style="color: red;">Current Location required.</ul>
             </div>
             <div class="input-field">
@@ -64,23 +64,23 @@
           <div class="col-3">
             <div class="input-field">
               <label for="Number of albums">Number of albums</label>
-              <input type="text" />
+              <input type="text" name="albumnumber"/>
               <ul v-if="numberOfAlbumsError" style="color: red;">Number of albums required.</ul>
             </div>
             <div class="input-field">
               <label for="Artist ID">Artist ID</label>
-              <input type="text" />
+              <input type="text" name="artistID"/>
               <ul v-if="artistIDError" style="color: red;">ArtistID required.</ul>
             </div>
             <div class="input-field">
               <label for="When did you start singing"
                 >When did you start singing</label>
-              <input type="date" />
+              <input type="date" name="startdate"/>
               <ul v-if="dateOfStartError" style="color: red;">Date of start required.</ul>
             </div>
             <div class="input-field">
               <label for="Contact">Contact</label>
-              <input type="tel" />
+              <input type="tel" name="contact"/>
               <ul v-if="contactError" style="color: red;">Contact required.</ul>
             </div>
           </div>
