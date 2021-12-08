@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Artist form
 router.get('/musicArtist_form', (req, resp) => {
-    resp.render('musicArtist_form');
+    resp.render('artistForm');
 });
 router.post('/musicArtist_form', (req, resp) => {
     // resp.sendFile(__dirname + '/views/musicArtist_form.html');

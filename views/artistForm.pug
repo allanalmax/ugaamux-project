@@ -1,0 +1,77 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Artist Form
+  link(rel='stylesheet' href='/css/bootstrap/css/bootstrap.css')
+  link(rel='stylesheet' href='/css/musicArtist_form.css')
+h2 Music Artist Form.
+form#form-id(method='post' action='/musicArtist_form' name='artistregistration')
+  .container
+    .row
+      .col-3
+        .input-field
+          label(for='Full Name') Full Name
+          input(type='text' name='fullname')
+          small#fullname-error
+        .input-field
+          label(for='Stage Name') Stage Name
+          input(type='text' name='stagename')
+          small#stagename-error 
+        .input-field
+          label(for='Date Of Birth') Date Of Birth
+          input(type='date' name='birthdate')
+          small#birthdate-error
+        .input-field
+          label(for='Location') Base Location
+          input(type='text' name='baselocation')
+          small#baselocation-error
+      .col-3
+        .input-field
+          label(for='Profile') Profile
+          input(type='text' name='profile')
+          small#profile-error
+        .input-field
+          label(for='NIN') NIN
+          input(type='text' name='NIN')
+          small#NIN-error
+        .input-field
+          label(for='Current Location') Current Location
+          input(type='text' name='currentlocation')
+          small#currentlocation-error
+        .input-field
+          label(for='Gender') Gender
+          br
+          input(type='radio' name='sex' value='Male')
+          span Male
+          input(type='radio' name='sex' value='Female')
+          span Female
+          small#sex-error
+      .col-3
+        .input-field
+          label(for='Number of albums') Number of albums
+          input(type='text' name='albumnumber')
+          small#albumnumber-error
+        .input-field
+          label(for='Artist ID') Artist ID
+          input(type='text' name='artistID')
+          small#artistID-error
+        .input-field
+          label(for='When did you start singing') When did you start singing
+          input(type='date' name='startdate')
+          small#startdate-error
+        .input-field
+          label(for='Contact') Contact
+          input(type='tel' name='contact')
+          small#contact-error
+  div
+    button#sub-btn(type='submit')
+      | Submit
+    button#res-btn(type='reset') Reset
+div
+  p
+    | Already have an account? 
+    a(href='') log in
+script(src='/css/bootstrap/js/bootstrap.bundle.js')
+script(src='/js 2/artistvalidate.js')

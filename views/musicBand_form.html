@@ -10,7 +10,7 @@
   </head>
   <body>
     <h2>Music Band Form.</h2>
-    <form id="app">
+    <form id="app" name="bandregistration">
       <div class="container">
         <div class="row">
           <div class="col-3">
@@ -64,15 +64,16 @@
         </div>
       </div>
       <div id="buttons">
-        <button type="submit" id="sub-btn" v-on:click="registerBand">Submit</button>
+        <button value="submit" type="submit" id="sub-btn" v-on:click="registerBand">Submit</button>
         <button type="reset" id="res-btn">Reset</button>
       </div>
     </form>
     <div>
       <p>Already have an account? <a href="">log in</a></p>
     </div>
-    <script src="/js/vue.js"></script>
+    <!-- <script src="/js/vue.js"></script> -->
     <script src="/css/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="/js/bandValidate.js"></script>
+    <!-- <script src="/js/bandValidate.js"></script> -->
+    <script src="/js 2/bandvalidate.js"></script>
   </body>
 </html>

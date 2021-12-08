@@ -31,9 +31,9 @@ app.set('views', path.join('views'));
 app.set('view engine', 'pug');
 
 // Routes
-app.use('artistregistration', artistRoutes);
+app.use('/artistregistration', artistRoutes);
 
-app.use('bandregistration', bandRoutes);
+app.use('/bandregistration', bandRoutes);
 
 // Landing page
 app.get('/', (req, resp) => {

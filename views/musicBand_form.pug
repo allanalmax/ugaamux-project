@@ -7,13 +7,14 @@ head
   link(rel='stylesheet' href='/css/bootstrap/css/bootstrap.css')
   link(rel='stylesheet' href='/css/musicBand_form.css')
 h2 Music Band Form.
-form#app(method='post' action='/musicBand_form')
+form#form-id(method='post' action='/musicBand_form')
   .container
     .row
       .col-3
         .input-field
           label(for='Band Name') Band Name
           input(type='text' name='bandname')
+          small#bandname-error
         .input-field
           label(for='Owner') Band Owner
           input(type='text' name='bandowner')
